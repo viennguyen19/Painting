@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#tools {
+  width: 100px;
+  height: 100vh;
+  position: absolute;  
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#clear, #eraser, #brush, #color, #undo, #savefile{
+  width: 100px;
+  height: 50px;
+  background: lavender;
+}
+
+#eraserSize, #brushSize {
+  width: 10px;
+  height: 200px;
+  background-color: rgb(4, 0, 255);
+  position: absolute;
+  top: 50%;
+  left: 105px;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 10px;
+}
+
+#sizeEraser, #sizeBrush {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+#colorTable {
+  width: 200px;
+  height: 200px;
+  border: 1px solid orange;
+  position: absolute;
+  left: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+
+#myCanvas {
+  width: calc(100vw - 130px);
+  height: calc(100vh - 2px);
+  background: white;
+  border: 1px solid gray;
+  position: absolute;
+  left: 120px;
+}
+
+ .cards {
+	width: 300px;
+	height: 300px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+.cards > li {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-top: 117px solid blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+li:nth-of-type(1) {
+  border-top-color: #ff0000;
+
+}
+li:nth-of-type(2) {
+  border-top-color: #953553;
+  transform: rotate(30deg);
+}
+li:nth-of-type(3) {
+  border-top-color: 	#800080;
+  transform: rotate(60deg);
+}
+li:nth-of-type(4) {
+  border-top-color:#3007B6;
+  transform: rotate(90deg);
+}
+li:nth-of-type(5) {
+  border-top-color: #0000ff;
+  transform: rotate(120deg);
+}
+li:nth-of-type(6) {
+  border-top-color: #0d98ba;
+  transform: rotate(150deg);
+}
+li:nth-of-type(7) {
+  border-top-color: green;
+  transform: rotate(180deg);
+}
+li:nth-of-type(8) {
+  border-top-color: #9acd32;
+  transform: rotate(210deg);
+}
+li:nth-of-type(9) {
+  border-top-color: yellow;
+  transform: rotate(240deg);
+}
+li:nth-of-type(10) {
+  border-top-color: #ffae42;
+  transform: rotate(270deg);
+}
+li:nth-of-type(11) {
+  border-top-color: #ffa500;
+  transform: rotate(300deg);
+}
+li:nth-of-type(12) {
+  border-top-color: #ff5349;
+  transform: rotate(330deg);
+}
+
+.black {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

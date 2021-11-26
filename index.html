@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Let's draw</title>
+</head>
+<body>
+    <div class="container">
+        <div id="intro"><h1>Simple Painting App</h1></div>
+        <div class="feature">
+          <h1>Features</h1>
+          <div id="listFeatures">
+            <div>Choose brush size</div>
+            <div>Choose color</div>
+            <div>Area eraser</div>
+            <div>Clear</div>
+            <div>Undo stroke</div>
+            <div>Download Image</div>
+          </div>
+        </div>
+        <img id="myimg" src="img\paint.png" alt="Painting" width="656" height="329">
+        <img id="brush" src="img\brush.png" alt="brush" width="656" height="329">
+        <img id="color" src="img\color.png" alt="color" width="656" height="329">
+        <img id="eraser" src="img\eraser.png" alt="eraser" width="656" height="329">
+        <img id="undo" src="img\undo.png" alt="undo" width="656" height="329">
+        <img id="clear" src="img\clear.png" alt="clear" width="656" height="329">
+
+        <button id="gotoapp" onclick="openapp()">Draw</button>
+        <button id="contact" onclick="openContact()">Contact</button>
+        <img id="myinfo" src="img\myinfo.png" alt="myinfo">
+
+        <div id="footer"><p>2021 Sema All right reserved.</p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

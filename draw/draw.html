@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Let's Draw</title>
+	<link href="draw.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="tools">
+		<button id="clear" onclick="clearCanvas()">Clear</button>
+    <button id="eraser" onclick="eraser()">Eraser</button>
+    <button id="brush" onclick="brush()">Brush</button>
+    <button id="color" onclick="unhide()"">Color</button>
+    <div id="colorTable">
+      <div class="cards" >
+        <li id="r" onclick="pickRed()"></li>
+        <li id="rp" onclick="pickRedPurple()"></li>  
+        <li id="p" onclick="pickPurple()"></li>
+        <li id="bp" onclick="pickBluePurple()"></li> 
+        <li id="b" onclick="pickBlue()"></li>
+        <li id="bg" onclick="pickCBlueGreen()"></li>  
+        <li id="g" onclick="pickGreen()"></li>
+        <li id="yg" onclick="pickYellowGreen()"></li> 
+        <li id="y" onclick="pickYellow()"></li>
+        <li id="yo" onclick="pickYellowOrange()"></li>  
+        <li id="o" onclick="pickOrange()"></li>
+        <li id="ro" onclick="pickRedOrange()"></li>
+      </div>
+      <div class="black" onclick="pickBlack()"></div>
+    </div>
+    <button id="undo" onclick="undo()">Undo</button>
+    <button id="savefile" download="myImage.jpg" href="" onclick="download_img()">Download</button>
+  </div>
+  <canvas id="myCanvas">
+  <p id="demo"></p>
+  <script src="draw.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Helvetica;
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    position: relative;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#intro {
+    width: 70%;
+    height: 50px;
+    background: #1994ad9c;
+    border: 5px solid #FB6542;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h1 {
+    background-image: 
+        linear-gradient(60deg, #ff0000, #953553, 
+        #800080, #3007B6, #0000ff, #0d98ba,
+        green, #9acd32, yellow, #ffae42, 
+        #ffa500, #ff5349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+  margin: 20px;
+}
+
+.feature {
+    width: 70%;
+    height: 200px;
+    background-color: lightyellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+#gotoapp {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    border: 1px solid black;
+    background-color: lavender;
+    box-shadow: 5px 5px 2px lightsteelblue;
+    border-radius: 5px;
+    bottom: 60px;
+    right: 30px;
+}
+#contact {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    border: 1px solid black;
+    background-color: lavender;
+    box-shadow: 5px 5px 2px lightsteelblue;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 30px;
+}
+
+#myinfo {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.appear {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  to {
+    width: 80%;
+    height: auto;
+    z-index: 10;
+  }
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 700px) {
+  #myimg, #color, #brush, #eraser, #clear, #undo {
+    width: 80%;
+    height: auto;
+  }
+  #intro, .feature {
+    width: 80%;
+  }
+}
