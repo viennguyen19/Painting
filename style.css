@@ -1,44 +1,48 @@
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    margin: 0 auto;
-    font-family: Helvetica;
-    position: relative;
+  margin: 0 auto;
+  font-family: Helvetica;
+  position: relative;
 }
 
 .container {
-    width: 100vw;
-    position: relative;
-    background: lightblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  position: relative;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     
 }
 #intro {
-    width: 70%;
-    height: 50px;
-    background: #1994ad9c;
-    border: 5px solid #FB6542;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  width: 70%;
+  height: 50px;
+  background: #1994ad9c;
+  border: 5px solid #FB6542;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#listFeatures {
+  padding: 30px;
 }
 
 h1 {
-    background-image: 
+  background-image: 
         linear-gradient(60deg, #ff0000, #953553, 
         #800080, #3007B6, #0000ff, #0d98ba,
         green, #9acd32, yellow, #ffae42, 
         #ffa500, #ff5349);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 img {
@@ -46,50 +50,59 @@ img {
 }
 
 .feature {
-    width: 70%;
-    height: 200px;
-    background-color: lightyellow;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-
+  width: 70%;
+  height: 200px;
+  background-color: lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
 }
 #gotoapp {
-    width: 100px;
-    height: 50px;
-    position: fixed;
-    border: 1px solid black;
-    background-color: lavender;
-    box-shadow: 5px 5px 2px lightsteelblue;
-    border-radius: 5px;
-    bottom: 60px;
-    right: 30px;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  background-color: lavender;
+  box-shadow:  inset 2px 2px 5px whitesmoke,
+               inset -2px -2px 5px gray;
+  border-radius: 10px;
+  border: none;
 }
 #contact {
-    width: 100px;
-    height: 50px;
-    position: fixed;
-    border: 1px solid black;
-    background-color: lavender;
-    box-shadow: 5px 5px 2px lightsteelblue;
-    border-radius: 5px;
-    bottom: 60px;
-    left: 30px;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  background-color: lavender;
+  box-shadow:  inset 2px 2px 5px whitesmoke,
+               inset -2px -2px 5px gray;
+  border-radius: 10px;
+  border: none;
+  bottom: 60px;
+  left: 30px;
+  z-index: 1000;
 }
-
+#contact:active, #gotoapp:active {
+  box-shadow: inset 1px 1px 4px #a3a3a3,
+              inset -2px -2px 4px white;
+  color: lavender;
+  background: lavender;
+}
 #myinfo {
-    width: 100px;
-    height: auto;
-    position: fixed;
-    border-radius: 5px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    z-index: -1;
+  width: 100px;
+  height: auto;
+  position: fixed;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 100vmax rgba(18,18,18,0.7);
+
 }
 
 .appear {
@@ -107,12 +120,12 @@ img {
 }
 
 #footer {
-    width: 100%;
-    height: 50px;
-    background-color: lightseagreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -124,4 +137,8 @@ img {
   #intro, .feature {
     width: 80%;
   }
+}
+
+img {
+  border-radius: 10px;
 }

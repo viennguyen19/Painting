@@ -11,32 +11,55 @@
 
 <body>
 	<div id="tools">
-		<button id="clear" onclick="clearCanvas()">Clear</button>
-    <button id="eraser" onclick="eraser()">Eraser</button>
-    <button id="brush" onclick="brush()">Brush</button>
-    <button id="color" onclick="unhide()"">Color</button>
-    <div id="colorTable">
-      <div class="cards" >
-        <li id="r" onclick="pickRed()"></li>
-        <li id="rp" onclick="pickRedPurple()"></li>  
-        <li id="p" onclick="pickPurple()"></li>
-        <li id="bp" onclick="pickBluePurple()"></li> 
-        <li id="b" onclick="pickBlue()"></li>
-        <li id="bg" onclick="pickCBlueGreen()"></li>  
-        <li id="g" onclick="pickGreen()"></li>
-        <li id="yg" onclick="pickYellowGreen()"></li> 
-        <li id="y" onclick="pickYellow()"></li>
-        <li id="yo" onclick="pickYellowOrange()"></li>  
-        <li id="o" onclick="pickOrange()"></li>
-        <li id="ro" onclick="pickRedOrange()"></li>
-      </div>
-      <div class="black" onclick="pickBlack()"></div>
-    </div>
-    <button id="undo" onclick="undo()">Undo</button>
-    <button id="savefile" download="myImage.jpg" href="" onclick="download_img()">Download</button>
+		<button id="clear" onclick="clearCanvas()">
+      <span>Clear</span>      
+    </button>
+    <button id="eraser" onclick="eraser()">
+      <div>Eraser</div>
+    </button>
+    <button id="brush" onclick="brush()">
+      <div>Brush</div>
+    </button>
+    <button id="undo" onclick="undo()">
+      <div>Undo</div>
+    </button>
+    <button id="savefile"  href="" onclick="download_img()">
+      <div>Download</div>
+    </button>
   </div>
-  <canvas id="myCanvas">
-  <p id="demo"></p>
+  <canvas id="myCanvas"></canvas>
+  <div id="brushContainer">
+    <div id="colorTable">      
+      <li id="black" onclick="black()"></li>
+      <li id="silver" onclick="silver()"></li>  
+      <li id="gray" onclick="gray()"></li>
+      <li id="orange" onclick="orange()"></li> 
+      <li id="maroon" onclick="maroon()"></li>
+      <li id="red" onclick="red()"></li>  
+      <li id="purple" onclick="purple()"></li>
+      <li id="fushsia" onclick="fushsia()"></li> 
+      <li id="green" onclick="green()"></li>
+      <li id="lime" onclick="lime()"></li>  
+      <li id="olive" onclick="olive()"></li>
+      <li id="yellow" onclick="yellow()"></li>
+      <li id="navy" onclick="navy()"></li>
+      <li id="blue" onclick="blue()"></li>
+      <li id="teal" onclick="teal()"></li>
+      <li id="aqua" onclick="aqua()"></li> 
+    </div>
+    <div id="brushSizeContainer">      
+      <div id="clippath"></div>
+      <div id="circle"></div>
+    </div>
+    <button id="hideBrush" onclick="hideBrush()">Hide Brush</button>
+  </div>
+  <div id="eraserContainer">    
+    <div id="eraserSizeContainer">
+      <div id="clippath1"></div>
+      <div id="circle1"></div>
+    </div>   
+    <button id="hideEraser" onclick="hideEraser()">Hide Eraser</button>
+  </div>
   <script src="draw.js"></script>
 </body>
 </html>
